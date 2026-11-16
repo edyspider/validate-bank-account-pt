@@ -5,6 +5,8 @@ const {
     randomNIB,
     validateIBAN,
     randomIBAN,
+    getBIC,
+    getBankName,
 } = require('@edyspider/validate-bank-account-pt');
 
 test('works with require()', () => {
@@ -16,4 +18,7 @@ test('works with require()', () => {
     assert.equal(validateIBAN('PT50000201231234567890154'), true);
     assert.equal(validateNIB(randomNIB()), true);
     assert.equal(validateIBAN(randomIBAN('0007')), true);
+    assert.equal(typeof getBIC, 'function');
+    assert.equal(typeof getBankName, 'function');
+    assert.equal(getBIC('PT50000700001234567890160'), 'BESCPTPL');
 });
