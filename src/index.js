@@ -2,6 +2,8 @@
 
 const BANK_CODE_PATTERN = /^\d{4}$/;
 const NIB_PATTERN = /^\d{21}$/;
+const IBAN_PREFIX = 'PT50';
+const IBAN_PATTERN = /^PT50\d{21}$/;
 
 /**
  * Computes the remainder of a string of digits divided by 97, one digit at a time,
@@ -68,4 +70,26 @@ export function randomNIB(bankCode = randomDigits(4)) {
     assertBankCode(bankCode);
     const base = bankCode + randomDigits(15);
     return base + computeCheckDigits(base);
+}
+
+/**
+ * Validates a Portuguese IBAN ('PT50' followed by a valid NIB).
+ * @param {unknown} value
+ * @returns {boolean}
+ */
+export function validateIBAN(value) {
+    if (typeof value !== 'string' || !IBAN_PATTERN.test(value)) {
+        return false;
+    }
+
+    return validateNIB(value.slice(IBAN_PREFIX.length));
+}
+
+/**
+ * Generates a random valid Portuguese IBAN.
+ * @param {string} [bankCode] Optional 4-digit bank code, e.g. '0007'.
+ * @returns {string}
+ */
+export function randomIBAN(bankCode) {
+    return IBAN_PREFIX + randomNIB(bankCode);
 }
