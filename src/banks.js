@@ -1,9 +1,10 @@
 // src/banks.js
 // Portuguese bank codes (the first 4 digits of a NIB) with the institution name and SWIFT/BIC.
-// Only institutions whose BIC was confirmed in two sources are listed.
-// Last checked: 2026-11-16.
-
+// Source: Banco de Portugal, "BIC associated with IBANs of Payment Service Providers
+// participating in SICOI" (update date: 2022-10-21). Last checked: 2026-11-16.
+ 
 export const BANKS = Object.freeze({
+    '0001': { name: 'Banco de Portugal, EP', bic: 'BGALPTTG' },
     '0007': { name: 'Novo Banco, S.A.', bic: 'BESCPTPL' },
     '0008': { name: 'Banco BAI Europa, S.A.', bic: 'BAIPPTPL' },
     '0010': { name: 'Banco BPI, S.A.', bic: 'BBPIPTPL' },
@@ -14,18 +15,33 @@ export const BANKS = Object.freeze({
     '0023': { name: 'Banco ActivoBank, S.A.', bic: 'ACTVPTPL' },
     '0025': { name: 'Caixa - Banco de Investimento, S.A.', bic: 'CXBIPTPL' },
     '0033': { name: 'Banco Comercial Português, S.A. (Millennium BCP)', bic: 'BCOMPTPL' },
+    '0034': { name: 'BNP Paribas - Sucursal em Portugal', bic: 'BNPAPTPL' },
     '0035': { name: 'Caixa Geral de Depósitos, S.A.', bic: 'CGDIPTPL' },
     '0036': { name: 'Caixa Económica Montepio Geral', bic: 'MPIOPTPL' },
     '0045': { name: 'Caixa Central de Crédito Agrícola Mútuo, CRL', bic: 'CCCMPTPL' },
     '0047': { name: 'Haitong Bank, S.A.', bic: 'ESSIPTPL' },
     '0048': { name: 'Banco Finantia, S.A.', bic: 'BFIAPTPL' },
+    '0059': { name: 'Caixa Económica da Misericórdia de Angra do Heroísmo', bic: 'CEMAPTP2' },
     '0061': { name: 'Banco de Investimento Global, S.A. (BiG)', bic: 'BDIGPTPL' },
     '0063': { name: 'Bison Bank, S.A.', bic: 'BNFIPTPL' },
     '0064': { name: 'Banco Português de Gestão, S.A.', bic: 'BPGPPTPL' },
     '0065': { name: 'Best - Banco Electrónico de Serviço Total, S.A.', bic: 'BESZPTPL' },
+    '0073': { name: 'Banco Santander Consumer Portugal, S.A.', bic: 'IBNBPTP1' },
+    '0079': { name: 'Banco BIC Português, S.A. (EuroBic)', bic: 'BPNPPTPL' },
+    '0097': { name: 'Caixa de Crédito Agrícola Mútuo da Chamusca, CRL', bic: 'CCCHPTP1' },
+    '0098': { name: 'Caixa de Crédito Agrícola Mútuo de Bombarral, CRL', bic: 'CERTPTP1' },
     '0160': { name: 'Novo Banco dos Açores, S.A.', bic: 'BESAPTPA' },
+    '0170': { name: 'Abanca Corporación Bancaria, S.A. - Sucursal em Portugal', bic: 'CAGLPTPL' },
     '0189': { name: 'Banco Atlântico Europa, S.A.', bic: 'BAPAPTPL' },
+    '0191': { name: 'BNI Europa - Banco de Negócios Internacional, S.A.', bic: 'BNICPTPL' },
     '0193': { name: 'Banco CTT, S.A.', bic: 'CTTVPTPL' },
     '0235': { name: 'Banco L.J. Carregosa, S.A.', bic: 'BLJCPTPT' },
+    '0269': { name: 'Bankinter, S.A. - Sucursal em Portugal', bic: 'BKBKPTPL' },
     '0698': { name: 'Unicre - Instituição Financeira de Crédito, S.A.', bic: 'UIFCPTP1' },
+    '0781': { name: 'IGCP - Agência de Gestão da Tesouraria e da Dívida Pública, E.P.E.', bic: 'IGCPPTPL' },
+    '5180': { name: 'Caixa de Crédito Agrícola Mútuo de Leiria, CRL', bic: 'CDCTPTP2' },
+    '5200': { name: 'Caixa de Crédito Agrícola Mútuo de Mafra, CRL', bic: 'CDOTPTPP' },
+    '5340': { name: 'Caixa de Crédito Agrícola Mútuo de Torres Vedras, CRL', bic: 'CTIUPTPP' },
+    '7500': { name: 'Universo, IME, S.A.', bic: 'SONVPTP1' },
 });
+ 

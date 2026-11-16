@@ -119,6 +119,7 @@ The bank is identified by the first 4 digits of the NIB (digits 5 to 8 of the IB
 
 | Code | Bank | SWIFT/BIC |
 | ---- | ---- | --------- |
+| 0001 | Banco de Portugal, EP | BGALPTTG |
 | 0007 | Novo Banco, S.A. | BESCPTPL |
 | 0008 | Banco BAI Europa, S.A. | BAIPPTPL |
 | 0010 | Banco BPI, S.A. | BBPIPTPL |
@@ -129,22 +130,36 @@ The bank is identified by the first 4 digits of the NIB (digits 5 to 8 of the IB
 | 0023 | Banco ActivoBank, S.A. | ACTVPTPL |
 | 0025 | Caixa - Banco de Investimento, S.A. | CXBIPTPL |
 | 0033 | Banco Comercial Português, S.A. (Millennium BCP) | BCOMPTPL |
+| 0034 | BNP Paribas - Sucursal em Portugal | BNPAPTPL |
 | 0035 | Caixa Geral de Depósitos, S.A. | CGDIPTPL |
 | 0036 | Caixa Económica Montepio Geral | MPIOPTPL |
 | 0045 | Caixa Central de Crédito Agrícola Mútuo, CRL | CCCMPTPL |
 | 0047 | Haitong Bank, S.A. | ESSIPTPL |
 | 0048 | Banco Finantia, S.A. | BFIAPTPL |
+| 0059 | Caixa Económica da Misericórdia de Angra do Heroísmo | CEMAPTP2 |
 | 0061 | Banco de Investimento Global, S.A. (BiG) | BDIGPTPL |
 | 0063 | Bison Bank, S.A. | BNFIPTPL |
 | 0064 | Banco Português de Gestão, S.A. | BPGPPTPL |
 | 0065 | Best - Banco Electrónico de Serviço Total, S.A. | BESZPTPL |
+| 0073 | Banco Santander Consumer Portugal, S.A. | IBNBPTP1 |
+| 0079 | Banco BIC Português, S.A. (EuroBic) | BPNPPTPL |
+| 0097 | Caixa de Crédito Agrícola Mútuo da Chamusca, CRL | CCCHPTP1 |
+| 0098 | Caixa de Crédito Agrícola Mútuo de Bombarral, CRL | CERTPTP1 |
 | 0160 | Novo Banco dos Açores, S.A. | BESAPTPA |
+| 0170 | Abanca Corporación Bancaria, S.A. - Sucursal em Portugal | CAGLPTPL |
 | 0189 | Banco Atlântico Europa, S.A. | BAPAPTPL |
+| 0191 | BNI Europa - Banco de Negócios Internacional, S.A. | BNICPTPL |
 | 0193 | Banco CTT, S.A. | CTTVPTPL |
 | 0235 | Banco L.J. Carregosa, S.A. | BLJCPTPT |
+| 0269 | Bankinter, S.A. - Sucursal em Portugal | BKBKPTPL |
 | 0698 | Unicre - Instituição Financeira de Crédito, S.A. | UIFCPTP1 |
+| 0781 | IGCP - Agência de Gestão da Tesouraria e da Dívida Pública, E.P.E. | IGCPPTPL |
+| 5180 | Caixa de Crédito Agrícola Mútuo de Leiria, CRL | CDCTPTP2 |
+| 5200 | Caixa de Crédito Agrícola Mútuo de Mafra, CRL | CDOTPTPP |
+| 5340 | Caixa de Crédito Agrícola Mútuo de Torres Vedras, CRL | CTIUPTPP |
+| 7500 | Universo, IME, S.A. | SONVPTP1 |
 
-Last checked: November 2026. Banks merge and change names: if a code or BIC is wrong or missing, please [open an issue](https://github.com/edyspider/validate-bank-account-pt/issues).
+Source: Banco de Portugal, *BIC associated with IBANs of Payment Service Providers participating in SICOI* (update date: 21 October 2022), checked in November 2026. The code `0045` is shared by Caixa Central and the local Caixas de Crédito Agrícola Mútuo (SICAM). Banks merge and change names: if a code or BIC is wrong or missing, please [open an issue](https://github.com/edyspider/validate-bank-account-pt/issues).
 
 ## Known Issues
 
